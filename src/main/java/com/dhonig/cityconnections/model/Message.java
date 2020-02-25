@@ -2,17 +2,12 @@ package com.dhonig.cityconnections.model;
 
 public class Message {
 
-    String name;
     String text;
 
-    public Message(String name, String text) {
-        this.name = name;
+    public Message( String text) {
         this.text = text;
     }
 
-    public String getName() {
-        return name;
-    }
 
     public String getText() {
         return text;
