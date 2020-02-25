@@ -23,8 +23,6 @@ public class SwaggerConfig {
     @Value("${swagger.api.description}")
     private String description;
 
-    @Value("${swagger.api.termsOfServiceUrl}")
-    private String termsOfServiceUrl;
 
     @Value("${swagger.api.version}")
     private String version;
@@ -39,7 +37,7 @@ public class SwaggerConfig {
     }
 
     private ApiInfo metaData() {
-        return new ApiInfoBuilder().title(title).description(description).termsOfServiceUrl(termsOfServiceUrl)
+        return new ApiInfoBuilder().title(title).description(description)
                 .version(version).build();
     }
 }
