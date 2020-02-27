@@ -1,4 +1,4 @@
-##CityConnections
+## CityConnections
 
 This Spring boot app features two endpoints:
 - /healthcheck - application is up and ready
