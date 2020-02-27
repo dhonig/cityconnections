@@ -31,4 +31,7 @@ Execute the command:
 ###Accessing Swagger Documentation
 - Browse to http://localhost:8080/swagger-ui.html
 
-
+### Possible Improvements
+- Proper logging
+- Pluggable Search Algorithm ( via spring dependency injection and JGraphT)
+- Endpoint to visualize graph
