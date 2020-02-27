@@ -1,5 +1,7 @@
 import com.dhonig.cityconnections.CityConnectionsApp;
 import com.dhonig.cityconnections.model.Message;
+import com.dhonig.cityconnections.service.SearchService;
+import org.junit.Ignore;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -18,6 +20,10 @@ public class ConnectionsControllerTest {
     @LocalServerPort
     private int port;
 
+
+    @Autowired
+    SearchService searchService;
+
     @Autowired
     private TestRestTemplate restTemplate;
 
@@ -34,10 +40,12 @@ public class ConnectionsControllerTest {
     }
 
     @Test
+    @Ignore
     public void givenBostonAndPhiladelphia_returnsYes(){
 
     }
 
+    @Ignore
     @Test
     public void givenPhiladelphiaAndAlbany_returnsNo(){
 

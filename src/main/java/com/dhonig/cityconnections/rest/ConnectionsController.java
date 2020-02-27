@@ -22,8 +22,8 @@ public class ConnectionsController {
 
     @RequestMapping("/connected")
     public Message  isConnected(@RequestParam("origin") String origin, @RequestParam("destination") String destination){
-        ArrayList paths=searchService.search(origin,destination);
-        if(paths.size() >=1){
+        boolean result=searchService.search(origin,destination);
+        if(result==true){
             return new Message("yes");
         }else{
             return new Message( "no");
