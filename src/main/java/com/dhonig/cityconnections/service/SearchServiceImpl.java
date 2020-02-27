@@ -6,6 +6,7 @@ import org.jgrapht.GraphPath;
 import org.jgrapht.alg.shortestpath.DijkstraShortestPath;
 import org.jgrapht.graph.DefaultDirectedGraph;
 import org.jgrapht.graph.DefaultEdge;
+import org.jgrapht.graph.DefaultUndirectedGraph;
 import org.jgrapht.traverse.DepthFirstIterator;
 import org.jgrapht.traverse.GraphIterator;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,7 +39,9 @@ public class SearchServiceImpl implements SearchService {
     @PostConstruct
     private void init() {
         cityData = factory.getObject();
-        graph = new DefaultDirectedGraph<String, DefaultEdge>(DefaultEdge.class);
+        //Undirected graph to allow the swap of origin and destination for a better
+        //user experience as we interpet a "Road" as bidirectional, as most commonly occuring in the natural world.
+        graph = new DefaultUndirectedGraph<>(DefaultEdge.class);
         for (String city : cityData.getUniqueCities()) {
             graph.addVertex(city.toString());
         }

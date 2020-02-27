@@ -1,7 +1,6 @@
 package com.dhonig.cityconnections.factory;
 
 import com.dhonig.cityconnections.model.CityData;
-import com.dhonig.cityconnections.util.FlattenUtil;
 import org.springframework.beans.factory.FactoryBean;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.Resource;
