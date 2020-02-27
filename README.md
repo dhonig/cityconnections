@@ -1,4 +1,4 @@
-#CityConnections
+## CityConnections
 
 This Spring boot app features two endpoints:
 - /healthcheck - application is up and ready
@@ -10,11 +10,11 @@ ex:
 http://localhost:8080/connections?origin=Boston&destination=New%20York
 ```
 
-##Prequisites
-- JDK 1.8.0 or above (Developed on openjdk version "1.8.0_222")
-- Gradle
+## Prequisites
+* JDK 1.8.0 or above (Developed on openjdk version "1.8.0_222")
+* Gradle
 
-###Running the app
+### Running the app
 
 Execute the command:
 
@@ -23,15 +23,15 @@ Execute the command:
 The app should start on http://localhost:8080
 
 
-###Running the tests
+### Running the tests
 Execute the command: 
 
 ```gradle test```
 
-###Accessing Swagger Documentation
-- Browse to http://localhost:8080/swagger-ui.html
+### Accessing Swagger Documentation
+* Browse to http://localhost:8080/swagger-ui.html
 
 ### Possible Improvements
-- Proper logging
-- Pluggable Search Algorithm ( via spring dependency injection and JGraphT)
-- Endpoint to visualize graph
+* Proper logging
+* Pluggable Search Algorithm ( via spring dependency injection and JGraphT)
+* Endpoint to visualize graph
