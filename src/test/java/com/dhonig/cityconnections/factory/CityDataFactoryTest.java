@@ -20,11 +20,11 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class CityDataFactoryTest {
 
 
-    static Set referenceSet;
+    static Set<String> referenceSet;
 
     @BeforeAll
     public static void initializeReferenceSet(){
-        referenceSet=new HashSet<String[]>();
+        referenceSet=new HashSet<String>();
         referenceSet.add("New York");
         referenceSet.add("Newark");
         referenceSet.add("Trenton");
